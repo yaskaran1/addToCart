@@ -1,0 +1,48 @@
+.grid-lay{
+  background-color: white;
+  display: grid;
+  gap:10px;
+  border:groove;
+  border-width: 5px;
+}
+div.header{
+  grid-column: 1 / span 2;
+  background-color: #ffffaa;
+  text-align: center;
+  font-size: larger;
+  margin:10px 10px 0 10px;
+  border: inset;
+  color:red;
+}
+
+div.head{
+  text-align: center;
+  padding: 10px 50px 10px 10px;
+  margin: 0 0 0 10px;
+  background-color: #00ccff;
+  border: inset;
+}
+div.input{
+  padding: 10px 50px 10px 10px;
+  margin: 0 10px 0px 0px;
+  background-color: #00ccff;
+  border: inset;
+}
+.footer{
+  grid-column: 1 / span 2;
+  grid-row: 9;
+  text-align: center;
+  background-color: #00ccff;
+  margin: 0 10px 10px 10px;
+  border:inset;
+}
+.footer button{
+  margin: 10px 10px 10px 10px;
+  padding: 10px 36px 10px 36px;
+}
+
+.container{
+  height: auto;
+  width: 500px;
+  margin: auto;
+}

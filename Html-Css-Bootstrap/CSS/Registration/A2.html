@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration</title>
+  <link rel="stylesheet" href="A2.css">
+</head>
+<body>
+  <div class="container">
+    <form class="reg-form" action="https://relinns.sample.api/submit-form" method="post">
+      <div class="grid-lay">
+        <div class="header">
+          <h1>Registration Form</h1>
+        </div>
+        <div class="head">
+          <label class="head-text" for="input-text">Enter Name</label>
+        </div>
+        <div class="input">
+          <input class="user-text" type="text" id="input-text" name="userName">
+        </div>
+        <div class="head">
+          <label class="head-text" for="input-pass">Enter Password</label>
+        </div>
+        <div class="input">
+          <input class="user-pass" type="password" id="input-pass" name="userPass">
+        </div>
+        <div class="head">
+          <label class="head-text" for="input-addr">Enter Address</label>
+        </div>
+        <div class="input">
+          <textarea class="user-addr" id="input-addr" value="" name="userText"> </textarea>
+        </div>
+        <div class="head">
+          <label class="head-text" for="input-game">Select Game</label>
+        </div>
+        <div class="input">
+          <div class="input-item">
+            <input class="user-game" type="checkbox" id="input-game" name="userGame" value="Hockey">
+            <label class="user-game">Hockey</label>
+          </div>
+          <div class="input-item">
+            <input class="row" type="checkbox" id="input-game" name="userGame" value="Football">
+            <label class="row">Football</label>
+          </div>
+          <div class="input-item">
+            <input class="user-game row" type="checkbox" id="input-game" name="userGame" value="Badminton">
+            <label>Badminton</label>
+          </div>
+          <div class="input-item">
+            <input class="user-game row" type="checkbox" id="input-game" name="userGame" value="cricket">
+            <label>Cricket</label>
+          </div>
+          <div class="input-item">
+            <input class="user-game row" type="checkbox" id="input-game" name="userGame" value="volleyball">
+            <label>Volleyball</label>
+          </div>
+        </div>
+        <div class="head">
+          <label class="head-text" for="input-gender">Gender</label>
+        </div>
+        <div class="input">
+          <div class="input-item">
+            <input class="user-gender" type="radio" id="input-male" name="userGender" value="male">
+            <label class="row" for="input-male">Male</label>
+          </div>
+          <div class="input-item">
+            <input class="user-gender" type="radio" id="input-female" name="userGender" value="female">
+            <label class="row" for="input-female">Female</label>
+          </div>  
+        </div>
+        <div class="head">
+          <label class="head-text" for="input-age">Select ur Age</label>
+        </div>
+        <div class="input">
+          <select class="user-age" id="input-age" name="age">
+            <option value="child">0-10</option>
+            <option value="young">11-30</option>
+            <option value="middle">31-60</option>
+            <option value="older">above 60</option>
+          </select>
+        </div>  
+        <div class="head">
+          <label class="head-text" for="input-photo">Select Photo</label>
+        </div>
+        <div class="input">
+          <input class="col" type="file" id="input-photo" name="userDoc">
+        </div>
+        <div class="footer">
+          <button class="user-btn" value="click-me">Click Me</button>
+          <button class="user-btn" type="reset" value="reset">Reset</button>
+          <button class="user-btn" value="sub-form">Submit Form</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

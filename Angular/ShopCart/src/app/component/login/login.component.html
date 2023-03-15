@@ -18,7 +18,7 @@
       <div class="heading">
         <h2>Login to Dribbble</h2>
       </div>
-      <form (ngSubmit)="login()" class="input-form">
+      <form [formGroup]="loginForm" (ngSubmit)="login()" class="input-form">
         <div class="form-element">
           <fieldset class="field">
             <label for="user-email">Email</label>

@@ -20,7 +20,7 @@ export class CartComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  clearEntries () {
+  clearEntries() {
     this.store.dispatch(clearCart());
   }
 
@@ -28,9 +28,7 @@ export class CartComponent implements OnInit {
     this.store.dispatch(addProduct(entry.product));
   }
 
-  less (entry: ProductGroup) {
+  less(entry: ProductGroup) {
     this.store.dispatch(removeProduct(entry.product));
   }
-
-
 }

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+</head>
+<style>
+  .container{
+    border-radius: 5px;
+  }
+  body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+  }
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.col-1 {
+  float: left;
+  width: 20%;
+  margin-top: 10px;
+}
+
+.col-2 {
+  float: left;
+  width: 10%;
+}
+  h1{
+    text-align: center;
+  }
+  form{
+    overflow-x: auto;
+    width: 100%;
+  }
+  .common{
+    width: auto;
+    padding: 10px 45px;
+    margin: 10px;
+    border-radius: 7px;
+    
+  }
+  .outer{
+    margin: 0 auto 30px auto;
+    padding: 0 20px 0 0;
+    width: 400px;
+  }
+  @media screen and (max-width: 600px) {
+  .col-1, .col-2, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+<body>
+  <h1>HTML FORM</h1>
+  <div class="outer">
+  <div class="container">
+      <form target="_blank" method="post" >
+        <div class="row">
+          <div class="col-1">
+            <label for="name">Name</label><br>
+          </div>
+          <div class="col-2">
+            <input class="common" type="text" id="name" name="userName"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="email">Email</label><br>
+          </div>
+          <div class="col-2">
+            <input class="common" type="email" id="email" name="userEmail"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="phone">Phone</label><br>
+          </div>
+          <div class="col-2">
+            <input class="common" type="tel" id="phone" name="userPhone" pattern="[0-9]{5}-[0-9]{5}"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="password">Password</label><br>
+          </div>
+          <div class="col-2">
+            <input class="common" type="password" id="password" name="userPass"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="gender">Gender</label><br>
+          </div>
+          <div class="col-2">
+            <select class="common" id="gender" name="userGender">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="text-area">Text Area</label><br>
+          </div>
+          <div class="col-2">
+            <textarea class="common" id="text-area" name="message" rows="5" cols="15">it's a text area</textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="friends" name="userFriends">Select Friend</label>
+          </div>
+          <div class="col-2">
+            <input class="common" list="friends">
+            <datalist id="friends">
+              <option>Prabhjot</option>
+              <option>Vishal</option>
+              <option>Shashak</option>
+              <option>Sandeep</option>
+            </datalist><br>
+          </div>
+        </div>
+        <div class="row">
+            <label for="cse">CSE</label>
+            <input class="common" type="radio" id="cse" name="department" value="cse">
+            <label for="ece">ECE</label>
+            <input class="common" type="radio" id="ece" name="department" value="ece">
+            <label for="me">ME</label>
+            <input class="common" type="radio" id="me" name="department" value="me"><br>
+        </div>
+        <div class="row">
+            <label for="hardware">Hardware</label>
+            <input class="common" type="checkbox" id="hardware" name="expert" value="userHardware">
+            <label for="software">Software</label>
+            <input class="common" type="checkbox" id="software" name="expert" value="userSoftwares"><br>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="fav-color">Favorite color : </label>
+          </div>
+          <div class="col-2">
+            <input class="common" type="color" id="fav-color" name="favColor"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="birthday">Birthday</label>
+          </div>
+          <div class="col-2">
+            <input class="common" type="datetime-local" id="birthday" name="userBirth"><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="document">Add Documents</label>
+          </div>
+          <div class="col-2">
+            <input class="common" type="file" id="document" name="userDoc" multiple><br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-1">
+            <label for="speed">Running speed</label>
+          </div>
+          <div class="col-2">
+            <input class="common" type="range" id="speed" name="userSpeed" ><br>
+          </div>
+        </div>
+        <div class="row">
+            <button class="common" type="submit">Submit</button>
+            <input class="common" type="reset">
+        </div>
+      </form>
+  </div>
+  </div>
+</body>
+</html>

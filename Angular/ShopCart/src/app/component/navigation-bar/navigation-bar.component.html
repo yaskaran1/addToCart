@@ -34,11 +34,14 @@
         </li>
       </ul>
       <div class="d-flex ms-auto me-lg-1">
-        <div class="pt-2">
-          <a class="" routerLink="/cart"><span>{{ countProducts$ | async }}</span></a>
+        <a class="pt-2 notification pe-2 " (click)="loginAuth()">
+          <span class="fa fa-shopping-cart fa-2x"></span>
+          <span class="badge">{{ countProducts$ | async }}</span>
+        </a>
+        <div class="ms-3">
+          <button class="btn bg-white text-secondary" type="button" routerLink="/login" >Sign in</button>
+          <button class="btn sign-btn rounded-3" type="button" routerLink="/sign-up" >Sign up</button>
         </div>
-        <button class="btn bg-white text-secondary" type="button" routerLink="/login">Sign in</button>
-        <button class="btn sign-btn rounded-3" type="button" routerLink="/sign-up">Sign up</button>
       </div>
     </div>
   </div>
